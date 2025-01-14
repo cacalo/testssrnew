@@ -6,6 +6,11 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Client
   },
   {
+    path: "not-found",
+    renderMode: RenderMode.Server,
+    status: 404
+  },
+  {
     path: '**',
     renderMode: RenderMode.Prerender
   }
